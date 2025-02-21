@@ -1,0 +1,30 @@
+<html>
+  <script>
+        function create_iframes() {
+        let iframes = []
+        let iterations = 5;
+        let public_url = 'chrome-extension://adkcpkpghahmbopkjchobieckeoaoeem/blocked-image-search.png';
+        
+        while (true) {
+          let iframe = document.createElement("iframe");
+          document.body.append(iframe);
+          iframes.push(iframe);
+
+          for (let i=0; i<50; i++) {
+            let subframe = document.createElement("iframe");
+            subframe.src = public_url;
+            subframe.style.width = subframe.style.height = "200px";
+            iframe.contentDocument.body.append(subframe);
+          }
+
+          while (iframes.length > Math.max(3, 10-iterations)) {
+            iframes[0].remove();
+            iframes.shift();
+          }
+
+          iterations++;
+        }
+          
+          create_iframes()
+  </script>
+</html>

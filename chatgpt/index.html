@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Google</title>
+   <link rel="icon" href="https://google.com/favicon.ico">
+   <link rel="stylesheet" href="gpt-style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <script src="gpt-script.js" defer></script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jqmmjcdvpp");
+
+   
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+console.log(window.location.href)
+
+if (urlParams.get('pass') !== 'daddydoxr') {
+  if (localStorage.getItem('foreignAuth') === null){
+  if (/\bCrOS\b/.test(navigator.userAgent)) {
+} else {
+    window.location.replace(document.location.origin + "/userBlock");
+}}}
+
+if (urlParams.get('pass') === 'daddydoxr') {
+  if (localStorage.getItem("foreignAuth") === null) {
+    localStorage.setItem("foreignAuth", "true");
+  }
+  window.location.replace(document.location.origin);
+}
+</script>
+ </head>
+ <body>
+   <div class="chat-container">
+   </div>
+   <div class="typing-container">
+     <div class="typing-content">
+       <div class="typing-textarea">
+         <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+         <span id="send-btn" class="material-symbols-rounded">send</span>
+       </div>
+       <div class="typing-controls">
+         <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+         <span id="delete-btn" class="material-symbols-rounded">delete</span>
+     </div>
+   </div>
+ </body>
+</html>
